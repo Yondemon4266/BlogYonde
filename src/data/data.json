@@ -1,0 +1,64 @@
+{
+  "articles": [
+    {
+      "titre": "Premier Article",
+      "description": "Ceci est la description du premier article.",
+      "date": "2024-01-01",
+      "durée": "15 minutes",
+      "auteur": "John Doe",
+      "contenu": {},
+      "categorie": "react",
+      "id": "0"
+    },
+    {
+      "titre": "Deuxième Article",
+      "description": "Ceci est la description du deuxième article.",
+      "date": "2024-02-15",
+      "durée": "20 minutes",
+      "auteur": "Jane Smith",
+      "contenu": {},
+      "categorie": "react",
+      "id": "1"
+    },
+    {
+      "titre": "Troisième Article",
+      "description": "Ceci est la description du troisième article.",
+      "date": "2024-03-10",
+      "durée": "10 minutes",
+      "auteur": "Bob Johnson",
+      "contenu": {},
+      "categorie": "react",
+      "id": "2"
+    },
+    {
+      "titre": "Premier Article",
+      "description": "Ceci est la description du premier article.",
+      "date": "2024-01-01",
+      "durée": "15 minutes",
+      "auteur": "John Doe",
+      "contenu": {},
+      "categorie": "react-native",
+      "id": "3"
+    },
+    {
+      "titre": "nativeDeuxième Article",
+      "description": "Ceci est la description du deuxième article.",
+      "date": "2024-02-15",
+      "durée": "20 minutes",
+      "auteur": "Jane Smith",
+      "contenu": {},
+      "categorie": "react-native",
+      "id": "4"
+    },
+    {
+      "titre": "Troisième Article",
+      "description": "Ceci est la description du troisième article.",
+      "date": "2024-03-10",
+      "durée": "10 minutes",
+      "auteur": "Bob Johnson",
+      "contenu": {},
+      "categorie": "react-native",
+      "id": "5"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+@use "_settings" as settings;
+
+
+header {
+    .top {
+        width: 100vw;
+        height: 80px;
+        background: settings.$bgcolor1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        img {
+            width: 100px;
+            height: 50px;
+        }
+        .search {
+            position: relative;
+            display: flex;
+            height: 50px;
+            width: 300px;
+            background-color: settings.$bgcolor2;
+            border-radius: settings.$br;
+            padding: 0 settings.$padding;
+            padding-right: 30px;
+            input {
+                height: 50px;
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 0 settings.$padding *2;
+                background-color: transparent;
+                border-radius: settings.$br;
+            }
+            .icon {
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        border-bottom: 1px solid settings.$color2;
+    }
+    .bottom {
+        text-align: center;
+        background-color: settings.$bgcolor1;
+        padding: settings.$padding;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .bottom-top {
+            display: flex;
+            flex-direction: column;
+            gap: settings.$gap / 2;
+            h3 {
+                color: settings.$color2;
+            }
+            p {
+                color: settings.$color2;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: settings.$gap;
+            padding: settings.$padding * 2;
+            a {
+                border-radius: settings.$br;
+                padding: settings.$padding;
+                background-color: settings.$color2;
+                color: settings.$color1;
+                border: 2px solid transparent;
+                &:hover {
+                    border: 2px solid settings.$bgcolor2; 
+                }
+            }
+            a.active {
+                background-color: settings.$bgcolor3;
+                color: settings.$color2;
+                border: 2px solid settings.$bgcolor2;
+            }
+        }
+    }
+    
+}

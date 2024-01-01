@@ -1,0 +1,29 @@
+@use "_settings" as settings;
+@import "_settings";
+section {
+    padding: 20px;
+    border-bottom: 3px solid settings.$bgcolor2;
+    h4 {
+        font-size: 22px;
+    }
+    .line {
+        h5 {
+            font-size: 18px;
+            color: settings.$bgcolor1;
+        }
+        p { 
+            font-size: 16px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: settings.$gap / 2;
+        margin: 20px;
+        padding: settings.$padding;
+        border-bottom: 2px solid settings.$bgcolor1;
+        ul {
+            display: flex;
+            gap: settings.$gap / 2;
+            font-size: 13px;
+        }
+    }
+}
