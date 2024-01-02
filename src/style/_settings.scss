@@ -26,7 +26,11 @@ $padding: 10px;
 $br: 30px;
 $h3: 20px;
 $p: 15px;
-
+$a: 15px;
+$phone: 576px;
+$tablet: 768px;
+$desktop: 1200px;
+$largeDesktop: 1400px;
 
 
 * {
@@ -38,6 +42,11 @@ $p: 15px;
     text-decoration: none;
     color: $color1;
     font-family:"Roboto-Regular",Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width:100vw;
+    height: 100vh;
 }
 
 a {

@@ -10,9 +10,17 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 0 50px;
+        @media screen and (max-width: settings.$tablet) {
+            padding: 0 30px;
+        }
+        @media screen and (max-width: settings.$phone) {
+            flex-direction: column;
+            height: 200px;
+            padding: 20px 0;
+        }
         img {
             width: 100px;
-            height: 50px;
+            height: 80px;
         }
         .search {
             position: relative;
@@ -23,6 +31,10 @@ header {
             border-radius: settings.$br;
             padding: 0 settings.$padding;
             padding-right: 30px;
+            @media screen and (max-width: settings.$tablet) {
+                width: 250px;
+            }
+            
             input {
                 height: 50px;
                 width: 100%;
@@ -31,6 +43,9 @@ header {
                 padding: 0 settings.$padding *2;
                 background-color: transparent;
                 border-radius: settings.$br;
+                @media screen and (max-width: settings.$phone) {
+                     font-size: 11px;  
+                }
             }
             .icon {
                 position: absolute;
@@ -54,8 +69,16 @@ header {
             gap: calc(settings.$gap / 2);
             h3 {
                 color: settings.$color2;
+                @media screen and (max-width: settings.$phone) {
+                    font-size: 15px;
+                    
+                }
             }
             p {
+                @media screen and (max-width: settings.$phone) {
+                    font-size: 13px;
+                    
+                }
                 color: settings.$color2;
             }
         }
@@ -65,15 +88,33 @@ header {
             justify-content: center;
             gap: settings.$gap;
             padding: settings.$padding * 2;
+            @media screen and (max-width: settings.$tablet) {
+                padding: calc(settings.$padding - 3px) ;
+                gap: calc(settings.$gap / 2);
+            }
+            @media screen and (max-width: settings.$phone) {
+                padding: calc(settings.$padding - 5px) ;
+                gap: calc(settings.$gap / 6);
+            }
             a {
                 border-radius: settings.$br;
                 padding: settings.$padding;
                 background-color: settings.$color2;
                 color: settings.$color1;
                 border: 2px solid transparent;
+                font-size: settings.$a;
                 &:hover {
                     border: 2px solid settings.$bgcolor2; 
                 }
+                @media screen and (max-width: settings.$phone) {
+                    font-size: 11px;
+                    padding: settings.$padding / 2;
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 9px; 
+                }
+                
+                
             }
             a.active {
                 background-color: settings.$bgcolor3;

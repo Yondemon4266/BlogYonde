@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, p {
     margin: 0;  
 }
 .articleContainer {
+    position: relative;
     margin: settings.$gap 0;
     padding: settings.$padding;
     h1,h2,h3,h4,h5,h6,p {
@@ -17,7 +18,9 @@ h1, h2, h3, h4, h5, p {
         margin-bottom: 30px;
         display: flex;
         flex-direction: column;
-
+        @media screen and (max-width: settings.$phone) {
+            font-size: 12px;
+        }
         .retour {
             display: flex;
             flex-direction: row;
@@ -27,7 +30,9 @@ h1, h2, h3, h4, h5, p {
             background-color: settings.$bgcolor1;
             width: fit-content;
             padding: 5px 10px;
-
+            @media screen and (max-width: settings.$phone) {
+                padding: 3px 6px;
+            }
             cursor: pointer;
             &:hover {
                 p {
@@ -45,12 +50,17 @@ h1, h2, h3, h4, h5, p {
                 transition: 0.1s;
                 font-size: settings.$p;
                 color: settings.$color2;
-                
+                @media screen and (max-width: settings.$phone) {
+                    font-size: 14px;
+                }
             }
         }
         h2 {
         font-family: settings.$rb;
         padding: settings.$padding;
+        @media screen and (max-width: settings.$phone) {
+            font-size: 16px;
+        }
         }
         .row {
         display: flex;
@@ -65,19 +75,31 @@ h1, h2, h3, h4, h5, p {
         }
         }
         #contenu {
+            margin-bottom: -130px;
             h3 {
                 font-size: settings.$h3;
                 margin: 10px 0;
+                @media screen and (max-width: settings.$phone) {
+                    font-size: 14px;
+                }
                 
             }
             p {
                 font-size: settings.$p;
                 padding: 3px;
+                @media screen and (max-width: settings.$phone) {
+                    font-size: 12px;
+                }
             }
             a {
                 color: $bgcolor1;
             }
            
+        }
+        #nextarticle {
+            position: absolute;
+            right: 50px;
+            bottom: 0;   
         }
     }
 

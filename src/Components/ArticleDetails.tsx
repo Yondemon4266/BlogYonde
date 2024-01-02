@@ -3,12 +3,27 @@ import { AiOutlineUser, AiOutlineFieldTime } from "react-icons/ai";
 import { useNavigate, useParams } from "react-router-dom";
 import data from "../data/data.json";
 
+
+interface Article {
+  titre: string;
+  description: string;
+  date: string;
+  durée: string;
+  auteur: string;
+  contenu: string;
+  categorie: string;
+  id: string;
+}
 export default function ArticleDetails() {
   const url = useParams();
   const navigation = useNavigate();
   const articleData = data.articles.find(
     (element) => element.titre === url.articletitle
   );
+  const indexArticle = data.articles.findIndex(
+    (element: Article) => element.titre === url.articletitle
+  );
+
   if (articleData) {
     return (
       <section className="articleContainer">
@@ -37,6 +52,7 @@ export default function ArticleDetails() {
           id="contenu"
           dangerouslySetInnerHTML={{ __html: articleData.contenu }}
         ></div>
+        <div id="nextarticle">{data.articles[indexArticle + 1].titre}</div>
       </section>
     );
   } else {

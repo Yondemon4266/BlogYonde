@@ -8,17 +8,26 @@
     border-bottom: 3px solid settings.$bgcolor2;
     h4 {
         font-size: 22px;
+        @media screen and (max-width: settings.$phone) {
+            font-size: 16px;
+        }
     }
     .line {
         h5 {
             font-size: 18px;
             color: settings.$bgcolor1;
+            @media screen and (max-width: settings.$phone) {
+                font-size: 14px;
+            }
             &:hover {
                 color: settings.$bgcolor2;
             }
         }
         p { 
             font-size: 16px;
+            @media screen and (max-width: settings.$phone) {
+                font-size: 12px;
+            }
         }
         display: flex;
         flex-direction: column;
@@ -30,6 +39,9 @@
             display: flex;
             gap: calc(settings.$gap / 2);
             font-size: 13px;
+            @media screen and (max-width: settings.$phone) {
+                font-size: 11px;
+            }
         }
     }
 }
