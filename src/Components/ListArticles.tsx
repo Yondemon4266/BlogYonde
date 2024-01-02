@@ -1,7 +1,6 @@
-import React from "react";
 import data from "../data/data.json";
 import { NavLink, useLocation } from "react-router-dom";
-export default function ListArticles({ search }) {
+export default function ListArticles({ search }: any) {
   const location = useLocation();
   const currentURL = location.pathname;
 

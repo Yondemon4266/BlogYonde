@@ -1,7 +1,4 @@
-import React from "react";
-import { BsYoutube } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsYoutube, BsGithub } from "react-icons/bs";
 
 export default function Footer() {
   return (

@@ -1,10 +1,8 @@
-import React from 'react'
-import { BsArrowLeftShort } from "react-icons/bs";
-import { BsCalendar2Date } from "react-icons/bs";
-import { AiOutlineFieldTime } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
+import { BsArrowLeftShort, BsCalendar2Date } from "react-icons/bs";
+import { AiOutlineUser, AiOutlineFieldTime } from "react-icons/ai";
 import { useNavigate, useParams } from "react-router-dom";
 import data from "../data/data.json";
+
 export default function ArticleDetails() {
   const url = useParams();
   const navigation = useNavigate();

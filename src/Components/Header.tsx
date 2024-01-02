@@ -1,8 +1,7 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 
-export default function Header({ search, setSearch, conditions }) {
+export default function Header({ search, setSearch, conditions }: any) {
   return (
     <header>
       <div className="top">
