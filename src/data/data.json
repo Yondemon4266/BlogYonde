@@ -1,13 +1,13 @@
 {
   "articles": [
     {
-      "titre": "Premier Article",
+      "titre": "Les bases de l’HTML - partie 1",
       "description": "Ceci est la description du premier article.",
-      "date": "2024-01-01",
-      "durée": "15 minutes",
-      "auteur": "John Doe",
-      "contenu": {},
-      "categorie": "react",
+      "date": "02-01-2024",
+      "durée": "10 minutes",
+      "auteur": "YondeCode",
+      "contenu": "<!DOCTYPE html> <html> <head> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Welcome file</title> <link rel=\"stylesheet\" href=\"https://stackedit.io/style.css\" /> </head> <body class=\"stackedit\"> <div class=\"stackedit__html\" style=\"max-width: 1200px\"><h3 id=\"les-bases-de-lhtml---partie-1.\">Les bases de l’HTML - partie 1.</h3> <p>Tout d’abord je vous invite à télécharger l’éditeur de code incontournable du moment : <a href=\"https://code.visualstudio.com/download\">Visual Studio Code</a>.</p> <p>Une fois fait il vous faut créer un dossier vierge pour votre projet,<br> clic droit sur le dossier pour sélectionner “<strong>Ouvrir avec Visual Studio Code</strong>”.</p> <p>Une fois dedans créez un fichier que l’on va nommer “index.html”</p> <p><img src=\"/imagesArticles/1/1.png\" alt=\"création fichier html\"></p> <p>Une fois fait on peut <strong>générer la structure d’un fichier HTML</strong> directement avec VS Code en tapant “<strong>!</strong>” puis la touche <strong>Tab</strong>.</p> <p>Explication de la structure d’un fichier HTML (en simplifié) :<br> <img src=\"/imagesArticles/1/2.png\" alt=\"structure fichier html\"></p> <p><strong>Qu’est-ce qu’est une balise HTML ?</strong><br> ce sont les éléments entre les chevrons (exemple: )<br> elles permettent de structurer, de hiérarchiser et de remplir le contenu de notre site web.<br> Donc dans l’exemple ci-dessus, la balise head contient 2 balises meta et title.</p> <p>Avant de commencer à mettre du contenu je vous invite à aller télécharger dans le panel des extensions de VS Code l’extension <strong>Live Server</strong> ainsi que l’extension<br> <strong>Auto Rename Tag</strong>.</p> <p>Live server permet de démarrer sur un port de notre ordinateur notre site (en local).<br> Auto Rename Tag nous aide dans le cas suivant: lorsque nous avons une balise <head></head> par exemple  lorsque je modifie le texte de l’un, cela va changer l’autre, cela nous évite de retaper le texte sur chaque balise.</p> <p><img src=\"/imagesArticles/1/3.png\" alt=\"structure fichier html\"></p> <p><img src=\"/imagesArticles/1/4.png\" alt=\"structure fichier html\"></p> <p>Lorsque Live Server est téléchargé, nous pouvons voir s’afficher le bouton “Go Live” tout en bas à droite de VS Code.<br> démarrer en cliquant dessus, puis ensuite pour voir quelque chose s’afficher ajoutons du texte sur notre site avec la balise p pour “paragraphe”.<br> Enregistrez le fichier à chaque changement avec “<strong>CTRL + S</strong>” <p><img src=\"/imagesArticles/1/5.png\" alt=\"structure fichier html\"></p> <p>Voilà nous avons appris à mettre en place et démarrer notre site !</p> <p>Pour la suite nous allons voir apprendre les balises les plus utilisées en HTML !</p> <p>Écrit par <strong>YondeCode</strong>.</p> </div> </body> </html>",
+      "categorie": "html",
       "id": "0"
     },
     {
@@ -16,17 +16,18 @@
       "date": "2024-02-15",
       "durée": "20 minutes",
       "auteur": "Jane Smith",
-      "contenu": {},
       "categorie": "react",
-      "id": "1"
+      "id": "1",
+      "contenu": ""
     },
+
     {
       "titre": "Troisième Article",
       "description": "Ceci est la description du troisième article.",
       "date": "2024-03-10",
       "durée": "10 minutes",
       "auteur": "Bob Johnson",
-      "contenu": {},
+      "contenu": "",
       "categorie": "react",
       "id": "2"
     },
@@ -36,7 +37,7 @@
       "date": "2024-01-01",
       "durée": "15 minutes",
       "auteur": "John Doe",
-      "contenu": {},
+      "contenu": "",
       "categorie": "react-native",
       "id": "3"
     },
@@ -46,7 +47,7 @@
       "date": "2024-02-15",
       "durée": "20 minutes",
       "auteur": "Jane Smith",
-      "contenu": {},
+      "contenu": "",
       "categorie": "react-native",
       "id": "4"
     },
@@ -56,7 +57,7 @@
       "date": "2024-03-10",
       "durée": "10 minutes",
       "auteur": "Bob Johnson",
-      "contenu": {},
+      "contenu": "",
       "categorie": "react-native",
       "id": "5"
     }

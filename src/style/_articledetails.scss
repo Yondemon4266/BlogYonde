@@ -1,0 +1,84 @@
+@use "./settings" as settings;
+@import "./settings";
+
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;  
+}
+.articleContainer {
+    margin: settings.$gap 0;
+    padding: settings.$padding;
+    h1,h2,h3,h4,h5,h6,p {
+        margin: 0;
+        padding: 0;
+    }
+    .articleHeader {
+        font-size: 13px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .retour {
+            display: flex;
+            flex-direction: row;
+            gap: calc(settings.$gap/2);
+            align-items: center;
+            border-radius: 10px;
+            background-color: settings.$bgcolor1;
+            width: fit-content;
+            padding: 5px 10px;
+
+            cursor: pointer;
+            &:hover {
+                p {
+                    font-weight: 600;
+                    
+                }
+            }
+            .icon {
+                width: 24px;
+                height: 24px;
+                transition: 0.1s;
+                color: settings.$color2;
+            }
+            p {
+                transition: 0.1s;
+                font-size: settings.$p;
+                color: settings.$color2;
+                
+            }
+        }
+        h2 {
+        font-family: settings.$rb;
+        padding: settings.$padding;
+        }
+        .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: settings.$gap;
+        }
+        border-bottom: 1px solid settings.$bgcolor1;
+        #auteurp {
+            color: settings.$bgcolor1;
+            cursor: pointer;
+        }
+        }
+        #contenu {
+            h3 {
+                font-size: settings.$h3;
+                margin: 10px 0;
+                
+            }
+            p {
+                font-size: settings.$p;
+                padding: 3px;
+            }
+            a {
+                color: $bgcolor1;
+            }
+           
+        }
+    }
+
+

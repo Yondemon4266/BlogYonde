@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 
-export default function Header({ search, setSearch }) {
+export default function Header({ search, setSearch, conditions }) {
   return (
     <header>
       <div className="top">
@@ -17,30 +17,35 @@ export default function Header({ search, setSearch }) {
           />
         </div>
       </div>
-      <div className="bottom">
-        <div className="bottom-top">
-          <h3>Bienvenu sur YondeBlog !</h3>
-          <p>Quel type d'article veux-tu lire?</p>
-        </div>
-        <ul>
-          <li>
-            <NavLink to="/">Tous</NavLink>
-          </li>
+      {conditions && (
+        <div className="bottom">
+          <div className="bottom-top">
+            <h3>Bienvenu sur YondeBlog !</h3>
+            <p>Quel type d'article veux-tu lire?</p>
+          </div>
+          <ul>
+            <li>
+              <NavLink to="/">Tous</NavLink>
+            </li>
 
-          <li>
-            <NavLink to="/react">React</NavLink>
-          </li>
-          <li>
-            <NavLink to="/react-native">React-Native</NavLink>
-          </li>
-          <li>
-            <NavLink to="/javascript">Javascript</NavLink>
-          </li>
-          <li>
-            <NavLink to="/css">CSS</NavLink>
-          </li>
-        </ul>
-      </div>
+            <li>
+              <NavLink to="/react">React</NavLink>
+            </li>
+            <li>
+              <NavLink to="/react-native">React-Native</NavLink>
+            </li>
+            <li>
+              <NavLink to="/javascript">Javascript</NavLink>
+            </li>
+            <li>
+              <NavLink to="/css">CSS</NavLink>
+            </li>
+            <li>
+              <NavLink to="/html">HTML</NavLink>
+            </li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }

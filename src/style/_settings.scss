@@ -13,6 +13,9 @@
 }
 
 
+$rb: "Roboto-Bold";
+$rm: "Roboto-Medium";
+$rr: "Roboto-Regular";
 $color1: black;
 $color2: white;
 $bgcolor1: rgb(142, 21, 39);
@@ -21,6 +24,10 @@ $bgcolor3:  rgb(204, 53, 70);
 $gap: 20px;
 $padding: 10px;
 $br: 30px;
+$h3: 20px;
+$p: 15px;
+
+
 
 * {
     margin: 0;
@@ -35,4 +42,13 @@ $br: 30px;
 
 a {
     color: $color1;
+}
+
+
+.iconplusinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc($gap / 4);
+    padding: $padding;
 }

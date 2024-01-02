@@ -9,7 +9,7 @@ footer {
     gap: 20px;
     ul {
         display: flex;
-        gap: settings.$gap / 2;
+        gap: calc(settings.$gap / 2);
         a {
             &:hover {
                 transform: scale(1.1);

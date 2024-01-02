@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PageType from "./pages/PageType";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ArticleDetails from "./Components/ArticleDetails";
@@ -20,6 +19,9 @@ function App() {
           <Route path=":articletitle" element={<ArticleDetails />} />
         </Route>
         <Route path="/css" element={<PageType />}>
+          <Route path=":articletitle" element={<ArticleDetails />} />
+        </Route>
+        <Route path="/html" element={<PageType />}>
           <Route path=":articletitle" element={<ArticleDetails />} />
         </Route>
       </Routes>

@@ -43,7 +43,7 @@ export default function ListArticles({ search }) {
     ));
 
   return (
-    <section>
+    <section className="listArticlesContainer">
       <h4>Nos articles</h4>
       {list}
     </section>

@@ -1,6 +1,9 @@
 @use "_settings" as settings;
 @import "_settings";
-section {
+.listArticlesContainer {
+    h1, h2, h3, h4, h5 {
+        margin: 0;  
+    }
     padding: 20px;
     border-bottom: 3px solid settings.$bgcolor2;
     h4 {
@@ -10,19 +13,22 @@ section {
         h5 {
             font-size: 18px;
             color: settings.$bgcolor1;
+            &:hover {
+                color: settings.$bgcolor2;
+            }
         }
         p { 
             font-size: 16px;
         }
         display: flex;
         flex-direction: column;
-        gap: settings.$gap / 2;
+        gap: calc(settings.$gap / 2);
         margin: 20px;
         padding: settings.$padding;
         border-bottom: 2px solid settings.$bgcolor1;
         ul {
             display: flex;
-            gap: settings.$gap / 2;
+            gap: calc(settings.$gap / 2);
             font-size: 13px;
         }
     }

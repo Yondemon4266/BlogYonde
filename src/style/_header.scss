@@ -51,7 +51,7 @@ header {
         .bottom-top {
             display: flex;
             flex-direction: column;
-            gap: settings.$gap / 2;
+            gap: calc(settings.$gap / 2);
             h3 {
                 color: settings.$color2;
             }
